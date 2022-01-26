@@ -1,0 +1,11 @@
+services:
+  vanillanode:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    #volumes:
+    #  - ./frontend/src:/app/src
+    ports:
+      - "8080:8080"
+    #environment:
+    #  - ENABLE_GATSBY_REFRESH_ENDPOINT=true
